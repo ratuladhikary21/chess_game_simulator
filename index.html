@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Chess Game</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body ng-app="myApp" ng-controller="GameController">
+  <div id="board">
+		<div class="row" ng-repeat="y in widths">
+			 <div class="box" ng-repeat="x in widths" ng-attr-id="{{'box-' + x + '-' + y}}" piece=""></div>
+		</div>
+  </div>
+  <div id="player">BLACK'S TURN</div>
+  <div id="restart-btn">RESTART</div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
